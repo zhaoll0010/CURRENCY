@@ -1,12 +1,13 @@
 #ifndef _INCL_COMMON_RULE
 #define _INCL_COMMON_RULE
-#include <cstdint>
+//#include <cstdint>
+#include <cstdlib>
 class Common_Rule
 {
 public:
-	uint8_t gen1[2];
-	uint8_t gen2[3];
-	uint8_t gen3[1];
+	unsigned int gen1[2];
+	unsigned int gen2[3];
+	unsigned int gen3[1];
 
 	static const int GEN_LEN1 = 5;
 	static const int GEN_LEN2 = 1;
