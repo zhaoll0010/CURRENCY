@@ -23,5 +23,7 @@ public:
 
 	Common_Rule();
 	void operator=(Common_Rule &r);
+	int Random_Max_Bit(int max);
+	void Generate_Random();
 };
 #endif
