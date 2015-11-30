@@ -42,7 +42,7 @@ void Chromosome::Crossover(Chromosome &c)
 		{
 			for (int i = 0; i < Buy_Sell_Rule::NUMBER1; i++)
 			{
-				uint8_t temp = buy.gen1[i];
+				unsigned int temp = buy.gen1[i];
 				buy.gen1[i] = c.buy.gen1[i];
 				c.buy.gen1[i] = temp;
 			}
@@ -51,7 +51,7 @@ void Chromosome::Crossover(Chromosome &c)
 		{
 			for (int i = 0; i < Buy_Sell_Rule::NUMBER1; i++)
 			{
-				uint8_t temp = sell.gen1[i];
+				unsigned int temp = sell.gen1[i];
 				sell.gen1[i] = c.sell.gen1[i];
 				c.sell.gen1[i] = temp;
 			}
@@ -60,7 +60,7 @@ void Chromosome::Crossover(Chromosome &c)
 		{
 			for (int i = 0; i <= Common_Rule::NUMBER1; i++)
 			{
-				uint8_t temp = common.gen1[i];
+				unsigned int temp = common.gen1[i];
 				common.gen1[i] = c.common.gen1[i];
 				c.common.gen1[i] = temp;
 			}
@@ -69,7 +69,7 @@ void Chromosome::Crossover(Chromosome &c)
 		{
 			for (int i = 0; i <= Common_Rule::NUMBER2; i++)
 			{
-				uint8_t temp = common.gen2[i];
+				unsigned int temp = common.gen2[i];
 				common.gen2[i] = c.common.gen2[i];
 				c.common.gen2[i] = temp;
 			}
@@ -80,7 +80,7 @@ void Chromosome::Crossover(Chromosome &c)
 		{
 			for (int i = 0; i <= number; i++)
 			{
-				uint8_t temp = buy.gen1[i];
+				unsigned int temp = buy.gen1[i];
 				buy.gen1[i] = c.buy.gen1[i];
 				c.buy.gen1[i] = temp;
 			}
@@ -90,7 +90,7 @@ void Chromosome::Crossover(Chromosome &c)
 			number -= Buy_Sell_Rule::NUMBER;
 			for (int i = 0; i <= number; i++)
 			{
-				uint8_t temp = sell.gen1[i];
+				unsigned int temp = sell.gen1[i];
 				sell.gen1[i] = c.sell.gen1[i];
 				c.sell.gen1[i] = temp;
 			}
@@ -100,7 +100,7 @@ void Chromosome::Crossover(Chromosome &c)
 			number -= Buy_Sell_Rule::NUMBER * 2;
 			for (int i = 0; i <= number; i++)
 			{
-				uint8_t temp = common.gen1[i];
+				unsigned int temp = common.gen1[i];
 				common.gen1[i] = c.common.gen1[i];
 				c.common.gen1[i] = temp;
 			}
@@ -110,7 +110,7 @@ void Chromosome::Crossover(Chromosome &c)
 			number -= Buy_Sell_Rule::NUMBER * 2 + Common_Rule::NUMBER1;
 			for (int i = 0; i <= number; i++)
 			{
-				uint8_t temp = common.gen2[i];
+				unsigned int temp = common.gen2[i];
 				common.gen2[i] = c.common.gen2[i];
 				c.common.gen2[i] = temp;
 			}
@@ -120,7 +120,7 @@ void Chromosome::Crossover(Chromosome &c)
 			number -= Buy_Sell_Rule::NUMBER * 2 + Common_Rule::NUMBER1 + Common_Rule::NUMBER2;
 			for (int i = 0; i <= number; i++)
 			{
-				uint8_t temp = common.gen3[i];
+				unsigned int temp = common.gen3[i];
 				common.gen3[i] = c.common.gen3[i];
 				c.common.gen3[i] = temp;
 			}
