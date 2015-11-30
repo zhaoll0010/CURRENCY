@@ -14,5 +14,7 @@ public:
 
 	Buy_Sell_Rule();
 	void operator=(Buy_Sell_Rule &r);
+	int Random_Int(int max);
+	void Generate_Random();
 };
 #endif
