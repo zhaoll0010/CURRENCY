@@ -53,5 +53,10 @@ void main()
 		}
 	}
 	
-	
+	for(int i = 0; i < INITIAL_NUMBER; i++)
+	{
+		delete cp[i];
+	}
+	delete cp;
+	delete c2;
 }
