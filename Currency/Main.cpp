@@ -6,6 +6,12 @@ int fitness(Chromosome &c)
 	return 0;
 }
 
+void getParents(Chromosome **cp, int *i, int *j)
+{
+	*i = 0;
+	*j = 1;
+}
+
 void main()
 {
 	Chromosome** cp;
@@ -28,15 +34,15 @@ void main()
 	
 		for(int n = 0; n < INITIAL_NUMBER; n += 2)
 		{
-			//int i, j;
-			//getParents(cp, &i, &j);
-			//c2[i] = new Chromosome(*cp[a]);
-			//c2[j] = new Chromosome(*cp[b]);
-			//c2[i]->Crossover(*c2[j]);
-			//c2[i]->Mutation();
-			//c2[j]->Mutation();
-			//fit[i] = fitness(*c2[i]);
-			//fit[j] = fitness(*c2[j]);
+			int i, j;
+			getParents(cp, &i, &j);
+			c2[n] = new Chromosome(*cp[i]);
+			c2[n + 1] = new Chromosome(*cp[j]);
+			c2[n]->Crossover(*c2[n + 1]);
+			c2[n]->Mutation();
+			c2[n + 1]->Mutation();
+			fit[n] = fitness(*c2[n + 1]);
+			fit[n + 1] = fitness(*c2[n + 1]);
 		}
 		
 		for(int i = 0; i < INITIAL_NUMBER; i++)
