@@ -8,3 +8,8 @@ void Buy_Sell_Rule::operator=(Buy_Sell_Rule &r)
 		gen1[i] = r.gen1[i];
 	}
 }
+
+int Buy_Sell_Rule::Random_Int(int max)
+{
+	return (rand() * max / RAND_MAX);
+}
