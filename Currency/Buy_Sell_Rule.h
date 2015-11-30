@@ -1,10 +1,11 @@
 #ifndef _INCL_BUY_SELL_RULE
 #define _INCL_BUY_SELL_RULE
-#include <cstdint>
+//#include <cstdint>
+#include <cstdlib>
 class Buy_Sell_Rule
 {
 public:
-	uint8_t gen1[12];
+	unsigned int gen1[12];
 
 	static const int GEN_LEN1 = 5;
 
