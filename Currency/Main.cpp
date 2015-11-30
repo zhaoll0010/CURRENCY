@@ -12,8 +12,8 @@ void main()
 	Chromosome** c2;
 	int fit[INITIAL_NUMBER];
 	
-	cp = new Chromosome*[100];
-	c2 = new Chromosome*[100];
+	cp = new Chromosome*[INITIAL_NUMBER];
+	c2 = new Chromosome*[INITIAL_NUMBER];
 	
 	for(int i = 0; i < INITIAL_NUMBER; i++)
 	{
