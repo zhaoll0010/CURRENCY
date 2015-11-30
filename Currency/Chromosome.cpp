@@ -3,7 +3,13 @@
 const float Chromosome::CROSS_OVER = 0.7f;
 const float Chromosome::MUTATION = 0.01f;
 
-Chromosome::Chromosome() {}
+Chromosome::Chromosome() 
+{
+	buy.Generate_Random();
+	sell.Generate_Random();
+	common.Generate_Random();
+}
+
 Chromosome::Chromosome(Chromosome &c)
 {
 	buy = c.buy;
