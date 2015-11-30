@@ -43,6 +43,7 @@ void main()
 		{
 			delete cp[i];
 			cp[i] = new Chromosome(*c2[i]);
+			delete c2[i];
 		}
 	}
 	
